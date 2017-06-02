@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>花果检测系统</title>
+    <title>水果检测</title>
     <script type="text/javascript" src="js/common/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/common/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/common/fileinput.js"></script>
@@ -12,21 +12,53 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/fileinput.min.css"/>
     <style>
-        .jumbotron {
+        .myJumbotron {
+            width: 100%;
             text-align: center;
             margin-top: 0;
-            background-color: #337ab7;
+            background: url('./img/header.jpg');
+            background-size: cover;
+            background-position: center;
             color: #FFFFFF;
+            height: 100%;
+        }
+
+        .myContainer {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(82, 209, 91, 0.15);
+            line-height: 300px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .navbar-default {
+            background-color: rgba(82, 209, 91, 0.15);
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            background-color: rgba(82, 209, 91, 0.3);
+        }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            background-color: rgba(82, 209, 91, 0.15) !important;
         }
 
         blockquote {
-            border-left: 10px solid #337ab7;
-            border-bottom: 1px solid #337ab7;
+            border-left: 10px solid rgba(82, 209, 91, 0.8);
+            border-bottom: 1px solid rgba(82, 209, 91, 0.8);
         }
 
         blockquote span {
-            color: #337ab7;
+            color: rgba(82, 209, 91, 0.8);
             font-size: 22px;
+        }
+
+        .jumbotron {
+            padding-bottom: 0px;
+            margin-top: 0;
+            background-color: #FFFFFF;
+            color: #FFFFFF;
         }
 
         body {
@@ -37,15 +69,22 @@
         .btn-primary {
             font-size: 15px;
             border: 1px solid #FFFFFF;
-            background-color: #337ab7;
+            background-color: rgba(82, 209, 91, 0.8);
             color: #FFFFFF;
         }
 
         .btn-primary:hover {
             font-size: 15px;
-            border: 1px solid #337ab7;
+            border: 1px solid rgba(82, 209, 91, 0.8);
             background-color: #FFFFFF;
-            color: #337ab7;
+            color: rgba(82, 209, 91, 0.8);
+        }
+
+        .btn-primary:active{
+            font-size: 15px;
+            border: 1px solid rgba(82, 209, 91, 0.8);
+            background-color: #FFFFFF;
+            color: rgba(82, 209, 91, 0.8);
         }
 
         .btn-warning {
@@ -104,59 +143,53 @@
 </head>
 
 <body>
-<!--<iframe src="./header.html"></iframe>-->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand"><span
                     class="glyphicon glyphicon-education"></span></a>
             <a class="navbar-brand">花果检测系统</a>
-            <!--<button type="button" class="navbar-toggle" data-toggle="collapse"-->
-            <!--data-target="#bar">-->
-            <!--<a class="navbar-brand" href="#">花果检测系统</a>-->
-            <!--<span class="sr-only">导航条</span>-->
-            <!--<span class="icon-bar" style="background-color: #FFFFFF;"></span>-->
-            <!--<span class="icon-bar" style="background-color: #FFFFFF;"></span>-->
-            <!--<span class="icon-bar" style="background-color: #FFFFFF;"></span>-->
-            <!--<span class="icon-bar" style="background-color: #FFFFFF;"></span>-->
-            <!--</button>-->
         </div>
         <div class="collapse navbar-collapse" id="bar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="index-copy.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                 <li><a href="./introduce.html"><span class="glyphicon glyphicon-file"></span> 花果相关知识</a></li>
-                <li><a href="./fruit.html"><span class="glyphicon glyphicon-tree-deciduous"></span> 水果检测</a></li>
+                <li class="active"><a href="./fruit.html"><span class="glyphicon glyphicon-tree-deciduous"></span> 水果检测</a></li>
                 <li><a href="./flower.html"><span class="glyphicon glyphicon-picture"></span> 花朵检测</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="jumbotron">
-    <div class="container">
-        <h1 style="font-size:45px;">水果检测</h1>
-    </div>
-</div>
-<div class="container">
-    <blockquote>
-        <span>上传图片</span>
-    </blockquote>
-    <div class="col-md-12">
-        <div class="alert alert-warning">
-            <table>
-                <tr>
-                    <td width="20%" valign="middle" rowspan="2">
-                        <span class="glyphicon glyphicon-info-sign"></span>
-                        <strong>Tips</strong>
-                    </td>
-                    <td>请上传需要检测的水果图片，检测时间较长，请耐心等待</td>
-                </tr>
-            </table>
+<div id="header">
+    <div class="myJumbotron">
+        <div class="myContainer">
+            花果检测系统
         </div>
     </div>
-    <div class="col-md-12">
-        <input type="file" class="file-loading" id="file" name="file" data-overwrite-initial="false"
-               data-min-file-count="1"
-               multiple/>
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <blockquote>
+            <span>上传图片</span>
+        </blockquote>
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                <table>
+                    <tr>
+                        <td width="20%" valign="middle" rowspan="2">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            <strong>Tips</strong>
+                        </td>
+                        <td>请上传需要检测的水果图片，检测时间较长，请耐心等待</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <input type="file" class="file-loading" id="file" name="file" data-overwrite-initial="false"
+                   data-min-file-count="1"
+                   multiple/>
+        </div>
     </div>
 </div>
 <!-- loading -->
@@ -169,7 +202,7 @@
                     <h4 class="modal-title">提示</h4>
                 </div>
                 <div class="modal-body">
-                    <img src="img/loading.gif" width="100%" height="100%"/>
+                    <img src="img/uploadLoading.gif" width="100%" height="100%"/>
                     <div style="text-align:center;">
                         <h4>正在检测中,请耐心等待……</h4>
                     </div>
@@ -195,5 +228,4 @@
     </div>
 </div>
 </body>
-
 </html>

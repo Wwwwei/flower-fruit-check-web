@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>花果检测系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="js/common/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/common/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="js/common/fileinput.js"></script>-->
-    <!--<script type="text/javascript" src="js/locales/zh.js"></script>-->
-    <!--<script type="text/javascript" src="js/upload/upload.js"></script>-->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="css/fileinput.min.css" />-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>花果检测系统</title>
     <style>
-        .jumbotron {
+        .myJumbotron {
+            width: 100%;
             text-align: center;
             margin-top: 0;
-            background-color: #337ab7;
+            background: url('./img/header.jpg');
+            background-size: cover;
+            background-position: center;
             color: #FFFFFF;
+            height: 100%;
         }
 
-        blockquote {
-            border-left: 10px solid #337ab7;
-            border-bottom: 1px solid #337ab7;
+        .myContainer {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(82, 209, 91, 0.15);
+            line-height: 300px;
+            font-size: 45px;
+            font-weight: bold;
         }
 
-        blockquote span {
-            color: #337ab7;
-            font-size: 22px;
+        .navbar-default {
+            background-color: rgba(82, 209, 91, 0.15);
         }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            background-color: rgba(82, 209, 91, 0.3);
+        }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            background-color: rgba(82, 209, 91, 0.15) !important;
+        }
+
+        /*blockquote {*/
+        /*border-left: 10px solid #337ab7;*/
+        /*border-bottom: 1px solid #337ab7;*/
+        /*}*/
+
+        /*blockquote span {*/
+        /*color: #337ab7;*/
+        /*font-size: 22px;*/
+        /*}*/
 
         body {
             font-family: "微软雅黑";
-            padding-top: 40px;
             font-size: 15px;
         }
 
-        /*.btn-primary {*/
-        /*font-size: 15px;*/
-        /*border: 1px solid #FFFFFF;*/
-        /*background-color: #337ab7;*/
-        /*color: #FFFFFF;*/
-        /*}*/
-
-        /*.btn-primary:hover {*/
-        /*font-size: 15px;*/
-        /*border: 1px solid #337ab7;*/
-        /*background-color: #FFFFFF;*/
-        /*color: #337ab7;*/
-        /*}*/
-        /**/
-        /*.btn-warning {*/
-        /*font-size: 15px;*/
-        /*width: 100%;*/
-        /*border: 1px solid #FFFFFF;*/
-        /*background-color: #f0ad4e;*/
-        /*color: #FFFFFF;*/
-        /*}*/
-        /**/
-        /*.btn-warning:hover {*/
-        /*font-size: 15px;*/
-        /*border: 1px solid #f0ad4e;*/
-        /*background-color: #FFFFFF;*/
-        /*color: #f0ad4e;*/
-        /*}*/
-        /**/
         .navbar a {
             font-family: "微软雅黑";
-            /*font-size: 15px;*/
             color: white;
             margin-left: 5px;
             margin-right: 5px;
@@ -88,10 +80,10 @@
             font-weight: bolder;
         }
 
-        .navbar-default .navbar-nav > li > a:hover {
-            font-weight: bolder;
-            background-color: #2E619F;
-        }
+        /*.navbar-default .navbar-nav > li > a:hover {*/
+        /*font-weight: bolder;*/
+        /*background-color: #2E619F;*/
+        /*}*/
 
         label {
             margin-top: 5px;
@@ -104,7 +96,7 @@
     </style>
 </head>
 
-<body>
+<body id="body">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -114,7 +106,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li class="active"><a href="index-copy.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                 <li><a href="./introduce.html"><span class="glyphicon glyphicon-file"></span> 花果相关知识</a></li>
                 <li><a href="./fruit.html"><span class="glyphicon glyphicon-tree-deciduous"></span> 水果检测</a></li>
                 <li><a href="./flower.html"><span class="glyphicon glyphicon-picture"></span> 花朵检测</a></li>
@@ -122,12 +114,170 @@
         </div>
     </div>
 </nav>
-<div class="jumbotron">
-    <div class="container">
-        <h1 style="font-size:45px;">花果检测系统</h1>
+<div id="header">
+    <div class="myJumbotron">
+        <div class="myContainer">
+            花果检测系统
+        </div>
     </div>
 </div>
-<div class="container">
+
+<div id="body">
+    <div class="bodySmsMode">
+        <div class="bodyWidth">
+            <div class="bodySmsModeTitle">
+                <img src="img/title0.png">
+            </div>
+            <div class="bodySmsModeContent">
+                <div>
+                    <img src="img/function1.png">
+                    <p class="first">花果相关知识</p>
+                    <p>列举主要花果</p>
+                    <p>营养、经济、药用价值</p>
+                    <p class="last">※供用户学习和参考※</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/function2.png">
+                    <p class="first">水果检测</p>
+                    <p>水果图片一键检测</p>
+                    <p>智能检测水果种类、成熟程度</p>
+                    <p class="last">※适用于水果区分、成熟识别※</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/function3.png">
+                    <p class="first">花朵检测</p>
+                    <p>花朵图片一键检测</p>
+                    <p>智能检测花朵种类、成熟程度</p>
+                    <p class="last">※适用于花朵区分、成熟识别※</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bodyNo1">
+        <div class="bodyWidth">
+            <div class="bodyNoTitle">
+                <img src="img/title1.png">
+            </div>
+            <div class="bodyNo1Content">
+                <img class="left" src="img/No1left.png">
+                <img class="right" src="img/No1right.png">
+            </div>
+        </div>
+    </div>
+    <div class="bodyNo2">
+        <div class="bodyWidth">
+            <div class="bodyNoTitle">
+                <img src="img/title2.png">
+            </div>
+        </div>
+        <div class="bodyNo2Content">
+            <img class="left" src="img/No2.png">
+        </div>
+    </div>
+    <div class="bodyNo3">
+        <div class="bodyWidth">
+            <div class="bodyWidth">
+                <div class="bodyNoTitle">
+                    <img src="img/title3.png">
+                </div>
+            </div>
+            <div class="bodyNo3Content">
+                <img class="left" src="img/No3.png">
+            </div>
+        </div>
+    </div>
+    <div class="bodySmsField">
+        <div class="bodyWidth">
+            <div class="bodySmsFieldTitle">
+                <img src="img/title4.png">
+            </div>
+            <div class="bodySmsFieldContent">
+                <div>
+                    <img src="img/field1.png">
+                </div>
+                <div>
+                    <img src="img/field2.png">
+                </div>
+                <div>
+                    <img src="img/field3.png">
+                </div>
+                <div>
+                    <img src="img/field4.png">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!--<div id="footer">-->
+<!--<div class="footerLeft">-->
+<!--&lt;!&ndash;<img src="./慕云短信服务平台_files/footerLogo.png">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>浙ICP备16035686号-2</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>商业合作:original_kai@163.com</p>&ndash;&gt;-->
+<!--</div>-->
+<!--<div class="footerRight">-->
+<!--&lt;!&ndash;<p>客服QQ：594660745</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>客服电话：<a href="javascript:void(0);">15700086096</a></p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>用户交流群：557391993</p>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<footer class="footer navbar-inverse navbar-static-bottom " id="footer">
+    <div class="container text-center"
+         style="font-size: 18px; color: #999999;">
+        <p>&nbsp;</p>
+        <p>
+            <strong>技术支持 By</strong>
+        </p>
+        <p>浙江工业大学计算机学院</p>
+        <p style="font-size: 15px;">我们将做的更好！</p>
+        <p>&nbsp;</p>
+        <p style="font-size: 13px;">(c) Copyright 2016 ZJUT 计算机学院. All
+            Rights Reserved.</p>
+    </div>
+</footer>
+<script src="./慕云短信服务平台_files/jquery.min.js"></script>
+<script>
+    var isClick = false;
+    var a = document.getElementsByClassName('headerSprite')[0];
+    var b = document.getElementsByClassName('headerModal')[0];
+    var c = document.getElementsByClassName('headerTop')[0];
+    a.onclick = function () {
+        isClick = !isClick;
+        if (isClick) {
+            a.className = 'headerSprite headerSpriteClick';
+            c.className = "headerTop headerTopHelp";
+            b.style.height = 95 + "px";
+            b.style.background = "#fff";
+        }
+        else {
+            a.className = 'headerSprite';
+            b.style.height = 0 + "px";
+            b.style.background = "transparent";
+            if (document.getElementById("body").scrollTop === 0) {
+                c.className = "headerTop";
+            }
+        }
+    }
+
+    $(".headerTip").find("a").click(function () {
+        $("html,body").animate({
+            scrollTop: 500
+        }, 800);
+    })
+    if (document.getElementById("body").scrollTop > 0)
+        c.className = "headerTop headerTopHelp";
+    window.onscroll = function () {
+        a.className = 'headerSprite';
+        b.style.height = 0 + "px";
+        if (document.getElementById("body").scrollTop > 0) {
+            c.className = "headerTop headerTopHelp";
+        } else {
+            c.className = "headerTop";
+        }
+    }
+</script>
+
+
 </body>
 </html>
