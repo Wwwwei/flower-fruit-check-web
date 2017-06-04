@@ -42,16 +42,6 @@
             background-color: rgba(82, 209, 91, 0.15) !important;
         }
 
-        /*blockquote {*/
-        /*border-left: 10px solid #337ab7;*/
-        /*border-bottom: 1px solid #337ab7;*/
-        /*}*/
-
-        /*blockquote span {*/
-        /*color: #337ab7;*/
-        /*font-size: 22px;*/
-        /*}*/
-
         body {
             font-family: "微软雅黑";
             font-size: 15px;
@@ -80,11 +70,6 @@
             font-weight: bolder;
         }
 
-        /*.navbar-default .navbar-nav > li > a:hover {*/
-        /*font-weight: bolder;*/
-        /*background-color: #2E619F;*/
-        /*}*/
-
         label {
             margin-top: 5px;
         }
@@ -92,6 +77,17 @@
         a:hover {
             cursor: pointer;
             text-decoration: none;
+        }
+
+        .title-zh {
+            font-family: "微软雅黑";
+            font-size: 35px;
+        }
+
+        .title-en {
+            font-family: "微软雅黑";
+            color: darkgray;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -126,7 +122,9 @@
     <div class="bodySmsMode">
         <div class="bodyWidth">
             <div class="bodySmsModeTitle">
-                <img src="img/title0.png">
+                <!--<img src="img/title0.png">-->
+                <p class="title-zh">我们提供的全新功能</p>
+                <p class="title-en">Our Features</p>
             </div>
             <div class="bodySmsModeContent">
                 <div>
@@ -191,20 +189,21 @@
     <div class="bodySmsField">
         <div class="bodyWidth">
             <div class="bodySmsFieldTitle">
-                <img src="img/title4.png">
+                <p class="title-zh">这些领域都在使用相关技术</p>
+                <p class="title-en">Application Scenarios</p>
             </div>
             <div class="bodySmsFieldContent">
                 <div>
-                    <img src="img/field1.png">
+                    <img src="img/field1.jpg">
                 </div>
                 <div>
-                    <img src="img/field2.png">
+                    <img src="img/field2.jpg">
                 </div>
                 <div>
-                    <img src="img/field3.png">
+                    <img src="img/field3.jpg">
                 </div>
                 <div>
-                    <img src="img/field4.png">
+                    <img src="img/field4.jpg">
                 </div>
             </div>
         </div>
@@ -222,61 +221,61 @@
 <!--&lt;!&ndash;<p>用户交流群：557391993</p>&ndash;&gt;-->
 <!--</div>-->
 <!--</div>-->
-<footer class="footer navbar-inverse navbar-static-bottom " id="footer">
-    <div class="container text-center"
-         style="font-size: 18px; color: #999999;">
-        <p>&nbsp;</p>
-        <p>
-            <strong>技术支持 By</strong>
-        </p>
-        <p>浙江工业大学计算机学院</p>
-        <p style="font-size: 15px;">我们将做的更好！</p>
-        <p>&nbsp;</p>
-        <p style="font-size: 13px;">(c) Copyright 2016 ZJUT 计算机学院. All
-            Rights Reserved.</p>
-    </div>
-</footer>
-<script src="./慕云短信服务平台_files/jquery.min.js"></script>
-<script>
-    var isClick = false;
-    var a = document.getElementsByClassName('headerSprite')[0];
-    var b = document.getElementsByClassName('headerModal')[0];
-    var c = document.getElementsByClassName('headerTop')[0];
-    a.onclick = function () {
-        isClick = !isClick;
-        if (isClick) {
-            a.className = 'headerSprite headerSpriteClick';
-            c.className = "headerTop headerTopHelp";
-            b.style.height = 95 + "px";
-            b.style.background = "#fff";
-        }
-        else {
-            a.className = 'headerSprite';
-            b.style.height = 0 + "px";
-            b.style.background = "transparent";
-            if (document.getElementById("body").scrollTop === 0) {
-                c.className = "headerTop";
-            }
-        }
-    }
+<!--<footer class="footer navbar-inverse navbar-static-bottom " id="footer">-->
+<!--<div class="container text-center"-->
+<!--style="font-size: 18px; color: #999999;">-->
+<!--<p>&nbsp;</p>-->
+<!--<p>-->
+<!--<strong>技术支持 By</strong>-->
+<!--</p>-->
+<!--<p>浙江工业大学计算机学院</p>-->
+<!--<p style="font-size: 15px;">我们将做的更好！</p>-->
+<!--<p>&nbsp;</p>-->
+<!--<p style="font-size: 13px;">(c) Copyright 2016 ZJUT 计算机学院. All-->
+<!--Rights Reserved.</p>-->
+<!--</div>-->
+<!--</footer>-->
+<!--<script src="./慕云短信服务平台_files/jquery.min.js"></script>-->
+<!--<script>-->
+<!--var isClick = false;-->
+<!--var a = document.getElementsByClassName('headerSprite')[0];-->
+<!--var b = document.getElementsByClassName('headerModal')[0];-->
+<!--var c = document.getElementsByClassName('headerTop')[0];-->
+<!--a.onclick = function () {-->
+<!--isClick = !isClick;-->
+<!--if (isClick) {-->
+<!--a.className = 'headerSprite headerSpriteClick';-->
+<!--c.className = "headerTop headerTopHelp";-->
+<!--b.style.height = 95 + "px";-->
+<!--b.style.background = "#fff";-->
+<!--}-->
+<!--else {-->
+<!--a.className = 'headerSprite';-->
+<!--b.style.height = 0 + "px";-->
+<!--b.style.background = "transparent";-->
+<!--if (document.getElementById("body").scrollTop === 0) {-->
+<!--c.className = "headerTop";-->
+<!--}-->
+<!--}-->
+<!--}-->
 
-    $(".headerTip").find("a").click(function () {
-        $("html,body").animate({
-            scrollTop: 500
-        }, 800);
-    })
-    if (document.getElementById("body").scrollTop > 0)
-        c.className = "headerTop headerTopHelp";
-    window.onscroll = function () {
-        a.className = 'headerSprite';
-        b.style.height = 0 + "px";
-        if (document.getElementById("body").scrollTop > 0) {
-            c.className = "headerTop headerTopHelp";
-        } else {
-            c.className = "headerTop";
-        }
-    }
-</script>
+<!--$(".headerTip").find("a").click(function () {-->
+<!--$("html,body").animate({-->
+<!--scrollTop: 500-->
+<!--}, 800);-->
+<!--})-->
+<!--if (document.getElementById("body").scrollTop > 0)-->
+<!--c.className = "headerTop headerTopHelp";-->
+<!--window.onscroll = function () {-->
+<!--a.className = 'headerSprite';-->
+<!--b.style.height = 0 + "px";-->
+<!--if (document.getElementById("body").scrollTop > 0) {-->
+<!--c.className = "headerTop headerTopHelp";-->
+<!--} else {-->
+<!--c.className = "headerTop";-->
+<!--}-->
+<!--}-->
+<!--</script>-->
 
 
 </body>
