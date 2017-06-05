@@ -6,11 +6,7 @@
     <title>花果相关知识</title>
     <script type="text/javascript" src="js/common/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/common/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="js/common/fileinput.js"></script>-->
-    <!--<script type="text/javascript" src="js/locales/zh.js"></script>-->
-    <!--<script type="text/javascript" src="js/upload/upload.js"></script>-->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="css/fileinput.min.css"/>-->
     <style>
         .myJumbotron {
             width: 100%;
@@ -36,7 +32,9 @@
             background-color: rgba(82, 209, 91, 0.15);
         }
 
-        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
             background-color: rgba(82, 209, 91, 0.3);
         }
 
@@ -81,8 +79,35 @@
             cursor: pointer;
             text-decoration: none;
         }
+
+        /*binna*/
+
+        .whitePadding {
+            background: #FFF;
+            padding: 20px 0px;
+        }
+
+        .grayPadding {
+            background: #F4F4F4;
+            padding: 20px 0px;
+        }
+
+        .centerMiddle {
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            window.sr = ScrollReveal({reset: true});
+//            window.sr = ScrollReveal();
+            sr.reveal('.foo');
+            sr.reveal('.bar');
+        })
+    </script>
 </head>
+
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -109,182 +134,120 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="guarantee-container">
-        <div>
-            <div style="background: rgb(255, 255, 255); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="img/1.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "
-                         data-sr-id="1">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "
-                         data-sr-id="2"><p style="font-size: 20px; font-weight: 900;">
-                        <img
-                                class="guarantee-title-img" src="img/1.png"><!-- react-text: 528 -->茉莉花
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">茉莉花</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            从学车报名开始，学员开始享受平台全程保姆式服务，我们平台代办各种报名所需的材料与证件，学员只需要准备身份证原件与白底一寸照片及其他必要的材料，帮助学员减少不必要的麻烦。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="img/jasmine.png" data-sr-id="3"
-                         style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+<div>
+    <div class="whitePadding">
+        <div class="centerMiddle">
+            <div>
+                <img class="foo" src="img/1.png"/>
+            </div>
+            <div style="overflow:hidden;margin:0 auto;width:200px" class="gua-text sr-slogan" data-sr-id="2">
+                <p style="font-weight: 600;font-family: 'Times New Roman';font-size: 20px">茉莉花</p>
+                <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
+                <p style="font-weight: 600;">药用价值</p>
+                <div style=" margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    茉莉花的根具有清热解表作用，用于外感发热，腹胀泻泻；花、叶药用治目赤肿痛，并有止咳化痰之效。
+                </div>
+                <p style="font-weight: 600;">经济价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    茉莉花清香四溢，能够提取茉莉油，是制造香精的原料,同时可以用于制作茉莉花茶。
                 </div>
             </div>
-        </div>
-        <div>
-            <div style="background: rgb(244, 244, 244); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/22.png" data-sr-id="4"
-                         style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "
-                         data-sr-id="5"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/2.png"><!-- react-text: 540 -->收费保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">收费全透明 无隐性收费</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            平台客服在学员报名咨询时会把所有的收费标准与收费项目都给学员说明，做到学员心中无疑问，杜绝传统驾校收费黑幕，报名少收，后期多收的现象出现。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/2.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "
-                         data-sr-id="6"></div>
+            <div>
+                <img class="bar" src="img/jasmine.png"/>
             </div>
         </div>
-        <div>
-            <div style="background: rgb(255, 255, 255); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/3.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="7">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="8"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/3.png"><!-- react-text: 552 -->练车保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">学员练车接送 随时练车</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            平台教练全程接送学员练车，随时预约练车，学员需要练车，教练不得推诿拒绝，如有此类事情发生可直接致电客服反映，客服将第一时间解决。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/33.png" data-sr-id="9"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
+    </div>
+    <div class="grayPadding">
+        <div class="centerMiddle">
+            <div>
+                <img class="foo" src="img/frangipane.png"/>
+            </div>
+            <div style="overflow:hidden;margin:0 auto;width:200px" class="gua-text sr-slogan" data-sr-id="2">
+                <p style="font-weight: 600;font-family: 'Times New Roman';font-size: 20px">鸡蛋花</p>
+                <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
+                <p style="font-weight: 600;">药用价值</p>
+                <div style=" margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    鸡蛋花经晾晒干后可以作为一味中药，具有清热解暑、润肺润喉咙还可以治疗咽喉疼痛等疾病。
+                </div>
+                <p style="font-weight: 600;">经济价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    提取香精供制造高级化妆品、香皂和食品添加剂之用，鸡蛋花晾干可以制作凉茶饮料。
                 </div>
             </div>
-        </div>
-        <div>
-            <div style="background: rgb(244, 244, 244); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/44.png" data-sr-id="10"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="11"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/4.png"><!-- react-text: 564 -->客服保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">专业顾问24小时服务</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            专业学车顾问全程一对一，中途有任何困难和疑问随时联系，第一时间出面协助解决，若发现有教练吃拿卡要等现象请向学车顾问反馈，经核实后将对该教练作出处罚，并挽回学员损失。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/4.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="12"></div>
+            <div>
+                <img class="foo" src="img/2.png"/>
             </div>
         </div>
-        <div>
-            <div style="background: rgb(255, 255, 255); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/5.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="13">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="14"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/5.png"><!-- react-text: 576 -->教练保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">5大系列15项标准筛选教练</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            从学车报名开始，学员开始享受平台全程保姆式服务，我们平台代办各种报名所需的材料与证件，学员只需要准备身份证原件与白底一寸照片及其他必要的材料，帮助学员减少不必要的麻烦。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/55.png" data-sr-id="15"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
+    </div>
+    <div class="whitePadding">
+        <div class="centerMiddle">
+            <div>
+                <img class="foo" src="img/3.png"/>
+            </div>
+            <div style="overflow:hidden;margin:0 auto;width:200px" class="gua-text sr-slogan" data-sr-id="2">
+                <p style="font-weight: 600;font-family: 'Times New Roman';font-size: 20px">草莓</p>
+                <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
+                <p style="font-weight: 600;">营养价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    草莓营养价值丰富，被誉为是“水果皇后”，尤其是所含的维生素C，其含量比苹果、葡萄都高7-10倍。
+                </div>
+                <p style="font-weight: 600;">保健价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    草莓中富含丰富的胡萝卜素与维生素A,保护视力；草莓中富含丰富的膳食纤维,助消化、防便秘。
                 </div>
             </div>
-        </div>
-        <div>
-            <div style="background: rgb(244, 244, 244); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/66.png" data-sr-id="16"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="17"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/6.png"><!-- react-text: 588 -->场地保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">场地遍布全杭 可换场地</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            和初好好学车在全杭州各区域都有签约合作场地，均符合国家场地驾驶技能考试场地标准，学员可挑选最近场地进行练车学习，如对场地不满意，可联系客服400进行更换。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/6.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="18"></div>
+            <div>
+                <img class="bar" src="img/strawberry.png"/>
             </div>
         </div>
-        <div>
-            <div style="background: rgb(255, 255, 255); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/7.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="19">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="20"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/7.png"><!-- react-text: 600 -->监督保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">教练监督系统 杜绝吃拿卡要</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            和初好好学车并不是一个中介平台，教练均为我们精挑细选的招聘教练，拥有绝对管理权。我们对教练采用一套完整的监督系统，客服定时回访，在教练优胜劣汰的同时对好教练进行奖励，从根本上解决传统驾校教练服务问题。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/77.png" data-sr-id="21"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
+    </div>
+    <div class="grayPadding">
+        <div class="centerMiddle">
+            <div>
+                <img class="foo" src="img/orange.png"/>
+            </div>
+            <div style="overflow:hidden;margin:0 auto;width:200px" class="gua-text sr-slogan" data-sr-id="2">
+                <p style="font-weight: 600;font-family: 'Times New Roman';font-size: 20px">橘子</p>
+                <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
+                <p style="font-weight: 600;">营养价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    橘子中富含维生素C和柠檬酸，有美容、消除疲劳的作用。
+                </div>
+                <p style="font-weight: 600;">药用价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    橘子大部分都可以入药，具有润肺止咳、理气燥湿、健脾胃的功效。
                 </div>
             </div>
+            <div>
+                <img class="foo" src="img/4.png"/>
+            </div>
         </div>
-        <div>
-            <div style="background: rgb(244, 244, 244); padding: 20px 0px;">
-                <div style="width: 70%; margin: 0px auto; display: flex; align-items: center; justify-content: center;">
-                    <img class="sr-slogan gua-img" src="./好好学车_files/88.png" data-sr-id="22"
-                         style="; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;">
-                    <div class="gua-text sr-slogan"
-                         style="padding: 0px 20px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="23"><p style="font-size: 20px; font-weight: 900;"><img
-                            class="guarantee-title-img" src="./好好学车_files/8.png"><!-- react-text: 612 -->平台保障
-                        <!-- /react-text --></p>
-                        <div style="width: 70px; height: 3px; background: rgb(118, 226, 254); margin-bottom: 10px;"></div>
-                        <p style="font-weight: 600;">丰富的运营经验与传统经验</p>
-                        <div style="font-size: 12px; color: rgb(171, 171, 171);">
-                            和初好好学车拥有2年的平台服务经验与10多年的传统驾校经验，运用互联网新思维运营传统驾校，杜绝传统驾校中的教练监管不足，教练权责不明所导致的传统驾校黑幕，保障学员合法权益。
-                        </div>
-                    </div>
-                    <img class="sr-slogan gua-img" src="./好好学车_files/8.png"
-                         style="width: 119px; height: 138px;; visibility: visible;  -webkit-transform: translateY(10px) scale(0.9); opacity: 0;transform: translateY(10px) scale(0.9); opacity: 0;"
-                         data-sr-id="24"></div>
+    </div>
+
+    <div class="whitePadding">
+        <div class="centerMiddle">
+            <div>
+                <img class="foo" src="img/5.png"/>
+            </div>
+            <div style="overflow:hidden;margin:0 auto;width:200px" class="gua-text sr-slogan" data-sr-id="2">
+                <p style="font-weight: 600;font-family: 'Times New Roman';font-size: 20px">柠檬</p>
+                <div style="width: 70px; height: 3px; background: rgba(82, 209, 91, 0.8); margin-bottom: 10px;"></div>
+                <p style="font-weight: 600;">营养价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    柠檬中含有丰富的柠檬酸，因此被誉为“柠檬酸仓库”，此外柠檬富含维生素C、糖类、钙、磷、铁等对人体有益的营养元素。
+                </div>
+                <p style="font-weight: 600;">药用价值</p>
+                <div style="margin-bottom:5px;font-size: 12px; color: rgb(171, 171, 171);">
+                    柠檬具有生津、止渴、祛暑等功能，富含的柠檬酸能够预防心血管病。
+                </div>
+            </div>
+            <div>
+                <img class="bar" src="img/lemon.png"/>
             </div>
         </div>
     </div>
 </div>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
+
 </html>
