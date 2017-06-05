@@ -242,6 +242,10 @@ html, body, p {
     text-align: center;
 }
 
+#body .bodyNo1 .bodyNo1Content.middle {
+    width: 60%;
+}
+
 #body .bodyNo2 .bodyNo1Content .left {
     width: 40%;
     margin-left: 4%;
